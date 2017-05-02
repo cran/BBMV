@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+import(ape)
+importFrom("graphics", "abline", "lines", "par", "plot")
+importFrom("stats", "dnorm", "dunif", "optim", "rnorm", "runif", "var")
