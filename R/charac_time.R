@@ -1,16 +1,18 @@
 charac_time <-
-function(Npts,model){
-	npar=length(model$par) # 3: flat ; 4: linear ; 5: quadratic ; 6: x4
+function(Npts=100,fit){
 	# retrieve coefficients for the potential
-	if (npar==3){a=b=c=0}
-	if (npar==4){a=b=0 ; c=model$par$c}
-	if (npar==5){a=0 ; b=model$par$b ; c=model$par$c}
-	if (npar==6){a=model$par$a ; b=model$par$b ; c=model$par$c}
+	if ('a'%in%names(fit$par)){a=fit$par$a}
+	else {a=fit$par_fixed$a}
+	if ('b'%in%names(fit$par)){b=fit$par$b}
+	else {b=fit$par_fixed$b}
+	if ('c'%in%names(fit$par)){c=fit$par$c}
+	else {c=fit$par_fixed$c}
+  bounds=fit$par_fixed$bounds
 	# build potential and get second largest eigenvalue
 	SEQ=seq(from=-1.5,to=1.5,length.out=Npts)
 	Vq=a*SEQ^4+b*SEQ^2+c*SEQ
 	Mat=DiffMat_forward(Vq)
 	vp=diag(Mat$diag)
-	Tc=(2*(model$par$bounds[2]-model$par$bounds[1])^2/model$par$sigsq)/(Npts-1)^2/abs(sort(Re(vp),decreasing=T)[2]) # the first one is 0 (or something very close due to numerical approximations)
+	Tc=(2*(bounds[2]-bounds[1])^2/fit$par$sigsq)/(Npts-1)^2/abs(sort(Re(vp),decreasing=T)[2]) # the first eigenvalue is 0 (or something very close due to numerical approximations)
 	return(Tc)
 }

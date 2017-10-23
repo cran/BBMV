@@ -5,7 +5,7 @@
 Diffusion matrix building
 }
 \description{
-Internal function that builds the discretized diffusion matrix of the BBM+V process going forward in time (for simulations)
+Internal function that builds the discretized diffusion matrix of the FPK process going forward in time (for simulations)
 }
 \usage{
 DiffMat_forward(V)

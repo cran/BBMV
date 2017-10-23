@@ -14,5 +14,7 @@ function (V){
   M[Npts,Npts]=-M[Npts-1,Npts]
   M=t(M) # we go backwards in time!
   eig=eigen(M)
-  return(list(Diff=M,diag=diag(eig$values),passage=eig$vectors))
-}
+  passage=matrix(NA,dim(eig$vectors)[1],dim(eig$vectors)[2])
+  for (col in 1:dim(eig$vectors)[2]){passage[,col]=Re(eig$vectors[,col])}
+  return(list(Diff=M,diag=diag(Re(eig$values)),passage=passage))
+  }

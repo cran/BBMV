@@ -9,7 +9,8 @@ function(tree,trait,V,bounds){
       Pos[[i]]=1
     }
     else {
-      Pos[[i]]= VectorPos_bounds(trait[tree$tip.label[i]],V,bounds=bounds)
+      if (class(trait)=='numeric'){Pos[[i]]= VectorPos_bounds(trait[tree$tip.label[i]],V=V,bounds=bounds)} # only one value per tip
+      else {Pos[[i]]= VectorPos_bounds(trait[[tree$tip.label[i]]],V=V,bounds=bounds)} # multiple values per tip (i.e. uncertainty)
     }
   }
   return(list(tab=tab,Pos=Pos))

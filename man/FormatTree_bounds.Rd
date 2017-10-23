@@ -16,7 +16,7 @@ FormatTree_bounds(tree, trait, V, bounds)
 A phylogenetic tree in phylo format.
 }
   \item{trait}{
-A vector of traits at the tips of the tree
+A vector of traits at the tips of the tree or a list with vectors of multiple measurements for each tip.
 }
   \item{V}{
 A vector giving the evolutionary potential.

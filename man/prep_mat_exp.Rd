@@ -19,7 +19,7 @@ The diffusion coefficient.
 The diffusion matrix.
 }
   \item{bounds}{
-A vector of bounds of the trait interval.
+A vector with two bounds for the trait interval.
 }
 }
 \author{

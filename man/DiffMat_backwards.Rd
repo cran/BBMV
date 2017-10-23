@@ -5,7 +5,7 @@
 Diffusion matrix building
 }
 \description{
-Internal function that builds the discretized diffusion matrix of the BBM+V process going backwards in time (for likelihood calculations)
+Internal function that builds the discretized diffusion matrix of the FPK process going backwards in time (for likelihood calculations)
 }
 \usage{
 DiffMat_backwards(V)

@@ -13,5 +13,7 @@ function (V){
   M[Npts-1,Npts]=exp((V[Npts]-V[Npts-1])/2)
   M[Npts,Npts]=-M[Npts-1,Npts]
   eig=eigen(M)
-  return(list(Diff=M,diag=diag(eig$values),passage=eig$vectors))
+  passage=matrix(NA,dim(eig$vectors)[1],dim(eig$vectors)[2])
+  for (col in 1:dim(eig$vectors)[2]){passage[,col]=Re(eig$vectors[,col])}
+  return(list(Diff=M,diag=diag(Re(eig$values)),passage=passage))
 }
