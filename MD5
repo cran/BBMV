@@ -1,5 +1,5 @@
-d4d2ef12ec5df4f54a1cd7d4c827c246 *DESCRIPTION
-17b2769ad73c37df27f05592bc9fb536 *NAMESPACE
+d06269c9f08fb37f7a7efd24572f8749 *DESCRIPTION
+403e52e143d01183efdfa4bb8e6d2fa8 *NAMESPACE
 a28ba8fe63fac04034ab7dc29247dc2d *R/ACE_FPK.R
 05e57e296ebdc86cfaee53aca3fe0691 *R/BBMV-internal.R
 2cc65c6e5d3aaf9db84cb11d1021ee82 *R/ConvProp_bounds.R
@@ -14,6 +14,7 @@ cd19b5c52c97651d8bc729a7f78d5504 *R/MH_MCMC_FPK.R
 11f94da9546612a3519071f7b82ce71c *R/Sim_FPK.R
 a2390a2b783d12bfb60eef66055f3386 *R/Uncertainty_FPK.R
 acb02133e5d75114b5ae6054f159f93a *R/VectorPos_bounds.R
+9a1371e5f520097f12616222d558490d *R/add.ML.landscape.FPK.R
 e236a6569eb88ad4181bb16e841a33a2 *R/charac_time.R
 4ab7f61aa79b54922e44b17d5e443bb5 *R/find.mle_FPK.R
 ad36e13636a5c8fc929e5fa7622dcd14 *R/find.mle_FPK_multiple_clades_same_V_different_sig2.R
@@ -30,13 +31,14 @@ a5e7f35f8ff5bec2b1ba95372961f232 *R/lnl_FPK_multiclades_same_V_different_sig2.R
 49f45ef5e407bfcdf76083089da95002 *R/lnl_FPK_multiclades_same_V_same_sig2.R
 fc4cca0a990458d2b0b4ae2fc6b737b8 *R/log_prior_5pars_root_bounds.R
 1f1e8658257daf6480f28920359548df *R/log_prior_nclades_plus_3_pars.R
+51f557eafc3711cc6e7f99d928503648 *R/posterior_vs_prior.R
 de0fe3ea2c86a4c5e754f7f978b4d72f *R/prep_mat_exp.R
 91a4c89977a984e06bb462fe142c1f07 *R/proposal_5pars_root_bounds.R
 a0204dec3ff5694e0687bb2f04f81245 *R/proposal_nclades_plus_3_pars.R
 75aa9c1a391789d96e9a1d66a1480c2f *R/reformat_multiclade_results.R
 425e392580ed2b34e7ed489a8de57be6 *R/trans_from_fixed.R
 2abd7390fb3c3b55830eec1cfd4dcd84 *R/trans_to_fixed.R
-c3eb152c677d36ba59b209c144c056e4 *build/partial.rdb
+48f03e132ad8c979a5d8b81aa5007ee9 *build/partial.rdb
 33939a0d9ac071f19d250200eb5f0fd8 *man/ACE_FPK.Rd
 2dbb61f6cc7f4d8d9dbadd4cb1fd6396 *man/BBMV-package.Rd
 37fb5538d8e9254184f9e79325aaf4fe *man/ConvProp_bounds.Rd
@@ -55,11 +57,12 @@ cc2da7b5dc06307bb88e569f28cb7ea9 *man/VectorPos_bounds.Rd
 d550c343655336a6b19cc1ded9c519d8 *man/find.mle_FPK_multiple_clades_same_V_different_sig2.Rd
 b9a3445a36dc4e21266f82078dc6d3f1 *man/fit_FPK_multiple_clades_different_V_different_sig2.Rd
 3cf797939eca69f9fc288e1976ec64be *man/get.landscape.FPK.MCMC.Rd
-af3c51b357c70011772d73652ae51ce0 *man/get.landscape.FPK.Rd
+a0c03f7b76d969e41a8372a30b057e34 *man/get.landscape.FPK.Rd
 f80529bb9f3d7a2be921e24c81f4136d *man/lnL_FPK.Rd
 f399371a98221a8fa945f4e6a1b366ee *man/lnl_FPK_multiclades_same_V_different_sig2.Rd
 d02ccc3b7849b1c690f45c1dd1bb65de *man/log_prior_5pars_root_bounds.Rd
 c1f170a488124e15811615ceb2065833 *man/log_prior_nclades_plus_3_pars.Rd
+54892c254834d375b15223c10f0fa57f *man/posterior_vs_prior.Rd
 ee55c56a2f1b2c177e434f034fb0cfd9 *man/prep_mat_exp.Rd
 58f3753f9326692e6ff3bfa891b0e981 *man/proposal_5pars_root_bounds.Rd
 5d64413f979520098c364938fd07a15a *man/proposal_nclades_plus_3_pars.Rd

@@ -1,5 +1,5 @@
 exportPattern("^[[:alpha:]]+")
 import(ape)
-importFrom("graphics", "abline", "lines", "par", "plot", "points", "polygon")
-importFrom("stats", "dnorm", "dunif", "optim", "rnorm", "runif", "var", "quantile")
+importFrom("graphics", "abline", "lines", "par", "plot", "points", "polygon","legend")
+importFrom("stats", "dnorm", "dunif", "optim", "rnorm", "runif", "var", "quantile","density")
 importFrom("grDevices", "rainbow", "adjustcolor")

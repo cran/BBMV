@@ -1,15 +1,17 @@
 \name{get.landscape.FPK}
 \alias{get.landscape.FPK}
+\alias{add.ML.landscape.FPK}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Plot Plot macroevolutionary landscapes estimated by the FPK or BBM+V models
+Plot macroevolutionary landscapes estimated by the FPK or BBM+V models
 }
 \description{
-Plot the adaptive landscape estimated in a BBM+V model.
+Plots a line representing the adaptive landscape estimated in a BBM+V or an FPK model.
 }
 \usage{
 get.landscape.FPK(fit, Npts = 100, main = "Macroevolutionary landscape"
   , ylab = "N.exp(-V)", xlab = "Trait", xlim = NULL, ylim = NULL)
+add.ML.landscape.FPK(fit,Npts=100,COLOR=1,LTY='dashed')
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -32,6 +34,10 @@ The limits of thex-axis.
 Label of the y-axis.}
   \item{xlab}{
 Label of the x-axis.}
+  \item{COLOR}{
+The color of the line when added to a plot of the posterior of a MCMC run.}
+  \item{LTY}{
+The type of the line when added to a plot of the posterior of a MCMC run.}
 }
 \value{
 A plot of the adaptive landscape across the trait interval.
